@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hire Aviral Uttam — ML & Data Science Projects</title>
+<meta name="description" content="Hire Aviral Uttam — MIT-certified data scientist. Fixed-scope packages for data cleaning, ML model builds, and end-to-end ML systems." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --mit-red: #A31F34;
+    --mit-red-dark: #8A1A2C;
+    --ink: #111111;
+    --ink-soft: #333333;
+    --muted: #6b6b6b;
+    --line: #d8d8d8;
+    --paper: #ffffff;
+    --paper-2: #fafafa;
+    --green: #16a34a;
+    --serif: 'Source Serif 4', Georgia, serif;
+    --sans: 'Inter', system-ui, -apple-system, sans-serif;
+    --mono: 'JetBrains Mono', ui-monospace, monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--sans);
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.65;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 980px; margin: 0 auto; padding: 0 32px; }
+  a { color: var(--mit-red); text-decoration: none; }
+  a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+  /* NAV */
+  nav.top {
+    border-bottom: 1px solid var(--line);
+    background: rgba(255,255,255,0.85);
+    position: sticky; top: 0; z-index: 50;
+    backdrop-filter: blur(10px);
+  }
+  nav.top .container {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 18px 32px;
+  }
+  .brand { font-family: var(--serif); font-weight: 700; font-size: 18px; }
+  .brand .accent { color: var(--mit-red); }
+  .back-link {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--ink-soft);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .back-link:hover { color: var(--mit-red); text-decoration: none; }
+
+  /* HERO */
+  header.hero {
+    padding: 100px 0 70px;
+    border-bottom: 1px solid var(--line);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  header.hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(circle at 30% 20%, rgba(163,31,52,0.06), transparent 50%),
+      radial-gradient(circle at 70% 80%, rgba(163,31,52,0.04), transparent 50%);
+    pointer-events: none;
+  }
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--mit-red);
+    margin-bottom: 22px;
+  }
+  .eyebrow::before { content: '— '; }
+  h1 {
+    font-family: var(--serif);
+    font-size: clamp(40px, 6vw, 68px);
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.015em;
+    margin-bottom: 18px;
+  }
+  h1 .red { color: var(--mit-red); }
+  .hero-sub {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: clamp(18px, 2.2vw, 22px);
+    color: var(--ink-soft);
+    max-width: 640px;
+    margin: 0 auto 32px;
+  }
+  .trust-row {
+    display: inline-flex; gap: 28px; flex-wrap: wrap; justify-content: center;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+  }
+  .trust-row span { display: flex; align-items: center; gap: 6px; }
+  .trust-row span::before {
+    content: '✓';
+    color: var(--green);
+    font-weight: 700;
+  }
+
+  /* SECTION SHELL */
+  section { padding: 80px 0; border-bottom: 1px solid var(--line); }
+  .section-head {
+    display: flex; align-items: baseline; gap: 16px;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--ink);
+  }
+  .section-num {
+    font-family: var(--mono);
+    color: var(--mit-red);
+    font-size: 13px;
+    letter-spacing: 0.1em;
+  }
+  h2 {
+    font-family: var(--serif);
+    font-size: clamp(28px, 3.5vw, 38px);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  .section-sub {
+    font-family: var(--serif);
+    font-style: italic;
+    color: var(--ink-soft);
+    font-size: 18px;
+    margin-bottom: 48px;
+    max-width: 640px;
+  }
+
+  /* PROCESS — 4 step strip */
+  .process {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .step {
+    padding: 28px 22px;
+    border-right: 1px solid var(--line);
+    background: var(--paper-2);
+    transition: background .25s;
+  }
+  .step:last-child { border-right: 0; }
+  .step:hover { background: white; }
+  .step .num {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    color: var(--mit-red);
+    margin-bottom: 12px;
+  }
+  .step h4 {
+    font-family: var(--serif);
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .step p {
+    font-size: 14px;
+    color: var(--ink-soft);
+    line-height: 1.55;
+  }
+
+  /* SERVICES */
+  .services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    align-items: stretch;
+  }
+  .service {
+    border: 1px solid var(--line);
+    padding: 36px 28px;
+    background: var(--paper);
+    display: flex; flex-direction: column;
+    position: relative;
+    transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+  }
+  .service:hover {
+    transform: translateY(-6px);
+    border-color: var(--mit-red);
+    box-shadow: 0 16px 40px rgba(163,31,52,0.08);
+  }
+  .service.popular {
+    border-color: var(--mit-red);
+    border-width: 2px;
+    background: white;
+  }
+  .service.popular::after {
+    content: 'MOST POPULAR';
+    position: absolute;
+    top: -12px; left: 50%; transform: translateX(-50%);
+    background: var(--mit-red);
+    color: white;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    padding: 4px 10px;
+    border-radius: 2px;
+    white-space: nowrap;
+  }
+  .service .tier {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--mit-red);
+    margin-bottom: 14px;
+  }
+  .service h3 {
+    font-family: var(--serif);
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .service .sub {
+    font-family: var(--serif);
+    font-style: italic;
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 24px;
+    min-height: 42px;
+  }
+  .price {
+    font-family: var(--serif);
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .price .cur { font-size: 22px; color: var(--mit-red); vertical-align: top; margin-right: 4px; }
+  .price-note {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+  .service ul { list-style: none; margin-bottom: 28px; flex: 1; }
+  .service ul li {
+    font-size: 14px;
+    color: var(--ink-soft);
+    padding: 8px 0 8px 22px;
+    border-bottom: 1px dashed var(--line);
+    position: relative;
+    line-height: 1.5;
+  }
+  .service ul li:last-child { border-bottom: 0; }
+  .service ul li::before {
+    content: '+';
+    position: absolute; left: 0; top: 8px;
+    color: var(--mit-red);
+    font-weight: 700;
+    font-family: var(--mono);
+  }
+  .service .btn { width: 100%; justify-content: center; }
+  .service .delivery {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 12px;
+  }
+
+  /* BTN */
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 14px 28px;
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    border-radius: 2px;
+    transition: all .2s ease;
+    border: 1px solid var(--ink);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .btn-primary {
+    background: var(--mit-red);
+    color: white;
+    border-color: var(--mit-red);
+  }
+  .btn-primary:hover {
+    background: var(--mit-red-dark);
+    border-color: var(--mit-red-dark);
+    text-decoration: none;
+    transform: translateY(-2px);
+  }
+  .btn-ghost {
+    background: var(--paper);
+    color: var(--ink);
+  }
+  .btn-ghost:hover {
+    background: var(--ink);
+    color: var(--paper);
+    text-decoration: none;
+  }
+
+  /* FORM */
+  .form-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+  }
+  .form-side {
+    background: var(--paper-2);
+    border-left: 3px solid var(--mit-red);
+    padding: 32px;
+  }
+  .form-side h3 {
+    font-family: var(--serif);
+    font-size: 22px;
+    margin-bottom: 14px;
+  }
+  .form-side p {
+    font-family: var(--serif);
+    font-size: 16px;
+    color: var(--ink-soft);
+    margin-bottom: 18px;
+    line-height: 1.6;
+  }
+  .form-side .promise {
+    display: flex; gap: 12px; align-items: flex-start;
+    padding: 14px 0;
+    border-top: 1px solid var(--line);
+    font-size: 14px;
+    color: var(--ink-soft);
+  }
+  .form-side .promise:last-child { border-bottom: 1px solid var(--line); }
+  .form-side .promise .ic {
+    width: 22px; height: 22px;
+    border-radius: 50%;
+    background: var(--mit-red);
+    color: white;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    flex-shrink: 0;
+    font-family: var(--mono);
+  }
+
+  form#project-form { display: flex; flex-direction: column; gap: 16px; }
+  .field { display: flex; flex-direction: column; gap: 6px; }
+  .field label {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  .field label .req { color: var(--mit-red); }
+  .field input, .field select, .field textarea {
+    font-family: var(--sans);
+    font-size: 15px;
+    padding: 12px 14px;
+    border: 1px solid var(--line);
+    border-radius: 2px;
+    background: white;
+    color: var(--ink);
+    transition: border-color .2s, box-shadow .2s;
+    outline: none;
+  }
+  .field input:focus, .field select:focus, .field textarea:focus {
+    border-color: var(--mit-red);
+    box-shadow: 0 0 0 3px rgba(163,31,52,0.1);
+  }
+  .field textarea { resize: vertical; min-height: 120px; font-family: var(--sans); }
+  .row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .submit-row { display: flex; gap: 12px; align-items: center; margin-top: 8px; }
+  .form-msg {
+    margin-top: 16px;
+    padding: 16px 18px;
+    border-radius: 2px;
+    font-size: 14px;
+    display: none;
+  }
+  .form-msg.show { display: block; animation: rise .5s ease; }
+  .form-msg.success {
+    background: #e8f7ed;
+    border-left: 3px solid var(--green);
+    color: #14532d;
+  }
+  .form-msg.error {
+    background: #fdecee;
+    border-left: 3px solid var(--mit-red);
+    color: #5a0e1c;
+  }
+
+  /* FAQ */
+  details.faq {
+    border-bottom: 1px solid var(--line);
+    padding: 22px 0;
+  }
+  details.faq summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--serif);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--ink);
+    transition: color .2s;
+  }
+  details.faq summary:hover { color: var(--mit-red); }
+  details.faq summary::-webkit-details-marker { display: none; }
+  details.faq summary::after {
+    content: '+';
+    font-family: var(--mono);
+    color: var(--mit-red);
+    font-size: 22px;
+    transition: transform .25s;
+  }
+  details.faq[open] summary::after { transform: rotate(45deg); }
+  details.faq .ans {
+    margin-top: 14px;
+    font-family: var(--serif);
+    font-size: 16px;
+    color: var(--ink-soft);
+    line-height: 1.7;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 32px 0 48px;
+    border-top: 3px solid var(--mit-red);
+  }
+  footer .container {
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+  }
+  footer .brand-foot {
+    font-family: var(--serif);
+    color: var(--ink);
+    font-weight: 600;
+    font-size: 14px;
+  }
+  footer .brand-foot .red { color: var(--mit-red); }
+
+  /* ANIMATIONS */
+  @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+  .reveal { opacity: 0; transform: translateY(16px); transition: opacity .8s ease, transform .8s ease; }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+  .reveal-stagger > * { opacity: 0; transform: translateY(14px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal-stagger.in > *:nth-child(1) { transition-delay: 0s; opacity: 1; transform: translateY(0); }
+  .reveal-stagger.in > *:nth-child(2) { transition-delay: .12s; opacity: 1; transform: translateY(0); }
+  .reveal-stagger.in > *:nth-child(3) { transition-delay: .24s; opacity: 1; transform: translateY(0); }
+  .reveal-stagger.in > *:nth-child(4) { transition-delay: .36s; opacity: 1; transform: translateY(0); }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .container { padding: 0 22px; }
+    header.hero { padding: 60px 0 50px; }
+    section { padding: 56px 0; }
+    .process, .services { grid-template-columns: 1fr; }
+    .step { border-right: 0; border-bottom: 1px solid var(--line); }
+    .step:last-child { border-bottom: 0; }
+    .form-wrap { grid-template-columns: 1fr; gap: 32px; }
+    .row-2 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <div class="container">
+    <div class="brand">Aviral Uttam<span class="accent">.</span></div>
+    <a class="back-link" href="index.html">← Back to portfolio</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <div class="eyebrow">Hire me · Freelance ML &amp; Data Projects</div>
+    <h1>Build your next <span class="red">ML system</span> with me.</h1>
+    <p class="hero-sub">
+      Fixed-scope packages from quick data cleanups to deployed predictive
+      systems. MIT-certified. Worldwide remote. Most briefs answered within
+      24 hours.
+    </p>
+    <div class="trust-row">
+      <span>MIT-certified</span>
+      <span>NVIDIA-certified</span>
+      <span>10k+ records shipped</span>
+      <span>75% model accuracy</span>
+    </div>
+  </div>
+</header>
+
+<!-- 01 PROCESS -->
+<section id="process">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-num">01</span>
+      <h2>How it works</h2>
+    </div>
+    <p class="section-sub reveal">A simple, predictable engagement from brief to delivery.</p>
+
+    <div class="process reveal-stagger reveal">
+      <div class="step">
+        <div class="num">STEP 01</div>
+        <h4>Send brief</h4>
+        <p>Fill the form below — share dataset, goal, and timeline. No payment yet.</p>
+      </div>
+      <div class="step">
+        <div class="num">STEP 02</div>
+        <h4>Scoped quote</h4>
+        <p>You get a written proposal within 24 hours: scope, deliverables, fixed price.</p>
+      </div>
+      <div class="step">
+        <div class="num">STEP 03</div>
+        <h4>50% to start</h4>
+        <p>Approve the proposal and pay 50% upfront via secure Razorpay link.</p>
+      </div>
+      <div class="step">
+        <div class="num">STEP 04</div>
+        <h4>Deliver &amp; sign-off</h4>
+        <p>Final code, models, dashboards, and docs handed over. 50% on completion.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-num">02</span>
+      <h2>Service packages</h2>
+    </div>
+    <p class="section-sub reveal">
+      Pick the closest fit — custom scopes welcome. Prices in INR; international clients pay equivalent USD via Stripe on request.
+    </p>
+
+    <div class="services">
+      <div class="service reveal">
+        <div class="tier">STARTER</div>
+        <h3>Data Cleanup &amp; EDA</h3>
+        <p class="sub">For when your data is messy and you need it analysis-ready.</p>
+        <div class="price"><span class="cur">₹</span>2,999</div>
+        <div class="price-note">Fixed · 3–5 days</div>
+        <ul>
+          <li>Clean &amp; validate up to 50k rows / 1 dataset</li>
+          <li>Imputation, outlier removal, schema fixes</li>
+          <li>Exploratory analysis &amp; 5 visualizations</li>
+          <li>Jupyter notebook + executive summary</li>
+        </ul>
+        <a class="btn btn-ghost" href="#brief" data-tier="Starter — Data Cleanup">Request this</a>
+        <div class="delivery">Delivery: 3–5 business days</div>
+      </div>
+
+      <div class="service popular reveal">
+        <div class="tier">STANDARD</div>
+        <h3>ML Model + Dashboard</h3>
+        <p class="sub">A trained model packaged in a dashboard your team can actually use.</p>
+        <div class="price"><span class="cur">₹</span>7,999</div>
+        <div class="price-note">Fixed · 1–2 weeks</div>
+        <ul>
+          <li>Everything in Starter</li>
+          <li>Trained ML model (scikit-learn / TensorFlow)</li>
+          <li>Feature engineering + model validation</li>
+          <li>Interactive Streamlit / Power BI dashboard</li>
+          <li>Documented code + handover call</li>
+        </ul>
+        <a class="btn btn-primary" href="#brief" data-tier="Standard — ML Model + Dashboard">Request this</a>
+        <div class="delivery">Delivery: 7–14 business days</div>
+      </div>
+
+      <div class="service reveal">
+        <div class="tier">PRO</div>
+        <h3>End-to-End ML System</h3>
+        <p class="sub">Full pipeline from raw data to deployed, monitored model.</p>
+        <div class="price"><span class="cur">₹</span>19,999</div>
+        <div class="price-note">Fixed · 2–4 weeks</div>
+        <ul>
+          <li>Everything in Standard</li>
+          <li>SQL / API data ingestion pipeline</li>
+          <li>Deep learning model (PyTorch / TensorFlow) if needed</li>
+          <li>Deployed to AWS / Streamlit Cloud / Hugging Face</li>
+          <li>Monitoring + 2-week post-launch support</li>
+        </ul>
+        <a class="btn btn-ghost" href="#brief" data-tier="Pro — End-to-End ML System">Request this</a>
+        <div class="delivery">Delivery: 14–28 business days</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 BRIEF FORM -->
+<section id="brief">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-num">03</span>
+      <h2>Send a project brief</h2>
+    </div>
+    <p class="section-sub reveal">
+      The more detail you share, the faster I can scope and quote. Everything is private.
+    </p>
+
+    <div class="form-wrap">
+      <aside class="form-side reveal">
+        <h3>What happens next</h3>
+        <p>
+          Your brief lands in my project pipeline (Firebase Firestore) and
+          triggers an email to me. I read every brief myself.
+        </p>
+        <div class="promise"><span class="ic">1</span><div><strong>Response &lt; 24h.</strong> If I can't take it on, I'll say so — no time wasted.</div></div>
+        <div class="promise"><span class="ic">2</span><div><strong>Free 15-min call.</strong> Optional, to clarify scope before I quote.</div></div>
+        <div class="promise"><span class="ic">3</span><div><strong>Fixed quote.</strong> No surprise hourly bills. You see the price before you commit.</div></div>
+        <div class="promise"><span class="ic">4</span><div><strong>NDA on request.</strong> Happy to sign before you share sensitive data.</div></div>
+      </aside>
+
+      <form id="project-form" class="reveal" novalidate>
+        <div class="row-2">
+          <div class="field">
+            <label>Your name <span class="req">*</span></label>
+            <input type="text" name="name" required placeholder="Jane Doe" />
+          </div>
+          <div class="field">
+            <label>Email <span class="req">*</span></label>
+            <input type="email" name="email" required placeholder="jane@company.com" />
+          </div>
+        </div>
+        <div class="field">
+          <label>Company / Organization</label>
+          <input type="text" name="company" placeholder="(Optional)" />
+        </div>
+        <div class="field">
+          <label>Project type <span class="req">*</span></label>
+          <select name="tier" required>
+            <option value="">— Select a package —</option>
+            <option>Starter — Data Cleanup</option>
+            <option>Standard — ML Model + Dashboard</option>
+            <option>Pro — End-to-End ML System</option>
+            <option>Custom / Not sure yet</option>
+          </select>
+        </div>
+        <div class="row-2">
+          <div class="field">
+            <label>Budget range</label>
+            <select name="budget">
+              <option value="">— Optional —</option>
+              <option>Under ₹3,000</option>
+              <option>₹3,000 – ₹8,000</option>
+              <option>₹8,000 – ₹20,000</option>
+              <option>₹20,000+</option>
+              <option>Open / flexible</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Ideal timeline</label>
+            <select name="timeline">
+              <option value="">— Optional —</option>
+              <option>ASAP (within a week)</option>
+              <option>1–2 weeks</option>
+              <option>2–4 weeks</option>
+              <option>Flexible / no deadline</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label>Project details <span class="req">*</span></label>
+          <textarea name="details" required placeholder="What problem are you solving? What data do you have? What does success look like?"></textarea>
+        </div>
+        <div class="submit-row">
+          <button type="submit" class="btn btn-primary" id="submit-btn">Send brief →</button>
+          <span style="font-family:var(--mono); font-size:12px; color:var(--muted); letter-spacing:0.04em;">All fields encrypted in transit.</span>
+        </div>
+        <div class="form-msg success" id="msg-success">
+          <strong>✓ Brief received.</strong> I'll review and respond within 24 hours via email. Check your spam folder just in case.
+        </div>
+        <div class="form-msg error" id="msg-error">
+          <strong>✗ Couldn't submit.</strong> Email me directly at <a href="mailto:aviraluttam@gmail.com">aviraluttam@gmail.com</a> and I'll follow up.
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- 04 FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-num">04</span>
+      <h2>Frequently asked</h2>
+    </div>
+    <p class="section-sub reveal">Quick answers to the things most clients ask before booking.</p>
+
+    <details class="faq reveal">
+      <summary>How is payment handled?</summary>
+      <div class="ans">
+        50% upfront after you approve the scoped proposal, 50% on delivery.
+        Indian clients pay via Razorpay (UPI / cards / netbanking). International
+        clients can pay via Stripe or Wise — ask me for a link.
+      </div>
+    </details>
+    <details class="faq reveal">
+      <summary>What if the model doesn't hit the accuracy I want?</summary>
+      <div class="ans">
+        I'll always give a realistic baseline estimate in the proposal — not a
+        promise of a specific number. If the deliverable doesn't meet the
+        scoped acceptance criteria, I keep iterating at no extra cost until it
+        does, or refund the second installment.
+      </div>
+    </details>
+    <details class="faq reveal">
+      <summary>Do I get the source code?</summary>
+      <div class="ans">
+        Yes — full source, trained model files, and documentation. Delivered
+        via a private GitHub repo or zip, your choice. The code is yours once
+        the final payment clears.
+      </div>
+    </details>
+    <details class="faq reveal">
+      <summary>Will you sign an NDA?</summary>
+      <div class="ans">
+        Happily. Send me your standard NDA along with the brief, or I can send
+        you a simple one-page mutual NDA to sign before we discuss specifics.
+      </div>
+    </details>
+    <details class="faq reveal">
+      <summary>What if my project doesn't fit any of the packages?</summary>
+      <div class="ans">
+        Pick "Custom / Not sure yet" in the form and describe what you need.
+        I'll scope and quote it like the standard tiers — same fixed-price
+        approach.
+      </div>
+    </details>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <span class="brand-foot">Aviral Uttam<span class="red">.</span></span>
+    <span>© <span id="yr"></span> · MIT-certified · <a href="index.html" style="color:var(--muted);">portfolio</a></span>
+  </div>
+</footer>
+
+<!-- FIREBASE — replace firebaseConfig with your own from console.firebase.google.com -->
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+  import { getFirestore, addDoc, collection, serverTimestamp }
+    from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+  // Firebase config — portfolio-accc0
+  const firebaseConfig = {
+    apiKey: "AIzaSyC9b0Rv_8ZWNmGWhEDLVT8RVis1pA2M6ww",
+    authDomain: "portfolio-accc0.firebaseapp.com",
+    projectId: "portfolio-accc0",
+    storageBucket: "portfolio-accc0.firebasestorage.app",
+    messagingSenderId: "212988210179",
+    appId: "1:212988210179:web:7c98ca107698a389c3f236",
+    measurementId: "G-8L4G0KLBDY"
+  };
+
+  let db = null;
+  try {
+    const app = initializeApp(firebaseConfig);
+    db = getFirestore(app);
+  } catch (e) {
+    console.warn("Firebase not configured yet. See SETUP.md.", e);
+  }
+
+  const form = document.getElementById("project-form");
+  const btn = document.getElementById("submit-btn");
+  const ok = document.getElementById("msg-success");
+  const err = document.getElementById("msg-error");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    ok.classList.remove("show"); err.classList.remove("show");
+    const data = Object.fromEntries(new FormData(form).entries());
+
+    // Required-field check
+    if (!data.name || !data.email || !data.tier || !data.details) {
+      err.classList.add("show");
+      err.querySelector("strong").textContent = "✗ Please fill required fields.";
+      return;
+    }
+
+    btn.disabled = true;
+    btn.textContent = "Sending…";
+
+    try {
+      if (!db) throw new Error("Firestore not initialized");
+      await addDoc(collection(db, "project_briefs"), {
+        ...data,
+        createdAt: serverTimestamp(),
+        source: "portfolio_hire_page",
+        status: "new"
+      });
+      ok.classList.add("show");
+      form.reset();
+    } catch (e2) {
+      console.error(e2);
+      err.classList.add("show");
+    } finally {
+      btn.disabled = false;
+      btn.textContent = "Send brief →";
+    }
+  });
+
+  // Prefill tier from service card clicks
+  document.querySelectorAll("[data-tier]").forEach(el => {
+    el.addEventListener("click", () => {
+      const tier = el.dataset.tier;
+      const sel = form.querySelector('select[name="tier"]');
+      [...sel.options].forEach(o => { if (o.text === tier) sel.value = o.value; });
+    });
+  });
+</script>
+
+<script>
+  document.getElementById("yr").textContent = new Date().getFullYear();
+
+  // Scroll reveal
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) {
+        e.target.classList.add("in");
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: "0px 0px -40px 0px" });
+  document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
+</script>
+
+</body>
+</html>
